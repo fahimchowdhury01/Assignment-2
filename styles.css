@@ -9,19 +9,60 @@
   font-weight: 400;
   font-style: normal;
 }
+/* --- SHARED TEXT STYLES --- */
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 header {
   background-color: rgba(26, 11, 46, 1);
 }
 .flex {
   display: flex;
 }
-header,
-.footer,
-.featured,
-.advantages {
-  max-width: 1600px;
-  margin: 0 auto;
+.items-center {
+  align-items: center;
 }
+
+.host-card,
+.about,
+.advantage-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+.about-info h2,
+.advantages h3,
+.featured h3,
+.host h3 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+.footer p,
+.video-content p,
+.host-content p,
+.advantage-cards p,
+.about-info p,
+.banner-text p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-top: 16px;
+}
+
+.host-card,
+.advantage-cards {
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+}
+
+/* --- Main styles --- */
 .navbar {
   justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -44,7 +85,6 @@ header,
   -webkit-text-fill-color: transparent;
 }
 .nav-links {
-  align-items: center;
   gap: 2rem;
 }
 .nav-links li {
@@ -57,11 +97,9 @@ header,
   text-decoration: none;
 }
 .nav-btn {
-  align-items: center;
   margin-right: 200px;
 }
 .nav-btn button {
-  align-items: center;
   gap: 4px;
   background: linear-gradient(
     45deg,
@@ -100,23 +138,17 @@ header,
   margin-top: 90px;
 }
 .footer p {
-  color: rgba(250, 250, 250, 1);
-  opacity: 0.6;
-  font-size: 1rem;
-  font-weight: 300;
   margin-top: 32px;
   margin-bottom: 120px;
-  line-height: 1.5rem;
 }
 
 .footer-logos {
   justify-content: center;
-  align-items: center;
+
   gap: 40px;
   padding-top: 22px;
 }
 .logo {
-  align-items: center;
   gap: 8px;
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
@@ -128,14 +160,7 @@ header,
   background-color: rgba(26, 11, 46, 1);
   padding-bottom: 120px;
 }
-.featured h3 {
-  color: rgba(255, 255, 255, 1);
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 120px;
-  padding-bottom: 40px;
-}
+
 .video-card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -175,38 +200,21 @@ header,
   padding: 24px;
 }
 .video-content p {
-  color: rgba(255, 255, 255, 1);
-  opacity: 0.6;
-  font-size: 1rem;
-  font-weight: 300;
   text-align: justify;
   padding: 12px 24px;
-  line-height: 1.5rem;
 }
 .duration {
-  align-items: center;
   gap: 6px;
   color: rgba(0, 255, 136, 1);
   padding: 24px;
   padding-top: 12px;
 }
 
-.host h3 {
-  color: rgba(255, 255, 255, 1);
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 120px;
-  padding-bottom: 40px;
-}
 .host-card {
-  background-color: rgba(53, 17, 101, 0.4);
   width: 100%;
-  max-width: 1200px;
 
   margin: 0 auto;
-  border-radius: 40px;
-  align-items: center;
+
   gap: 24px;
 }
 .host-image {
@@ -220,16 +228,8 @@ header,
   font-weight: 700;
   padding-top: 48.5px;
 }
-.host-content p {
-  color: rgba(255, 255, 255, 1);
-  opacity: 0.6;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.5rem;
-  padding-top: 16px;
-}
+
 .social {
-  align-items: center;
   gap: 8px;
   padding-top: 16px;
   padding-bottom: 48px;
@@ -251,17 +251,8 @@ header,
   background-color: rgba(35, 14, 61, 1);
   padding-bottom: 120px;
 }
-.advantages h3 {
-  color: rgba(255, 255, 255, 1);
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 120px;
-  padding-bottom: 40px;
-}
+
 .advantage-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -276,11 +267,6 @@ header,
   grid-column: span 2;
 }
 .advantage-cards {
-  background-color: rgba(53, 17, 101, 0.4);
-
-  border-radius: 40px;
-  align-items: center;
-  gap: 24px;
   padding: 40px;
 }
 .advantage-cards h4 {
@@ -289,33 +275,18 @@ header,
   font-weight: 700;
   padding-top: 16px;
 }
-.advantage-cards p {
-  color: rgba(255, 255, 255, 1);
-  opacity: 0.6;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.5rem;
-  padding-top: 16px;
-  line-height: 1.5rem;
-}
+
 .about {
   max-width: 1200px;
   margin: 0 auto;
 }
 .about-info h2 {
-  color: rgba(255, 255, 255, 1);
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
   padding-top: 50px;
   padding-bottom: 16px;
 }
 .about-info p {
-  color: rgba(255, 255, 255, 1);
   opacity: 0.8;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.5rem;
+
   text-align: center;
 }
 .about-border {
@@ -323,15 +294,8 @@ header,
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.rating-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding-bottom: 120px;
-}
+
 .ratings-container {
-  align-items: center;
   justify-content: space-between;
   padding-top: 80px;
   padding-bottom: 120px;
@@ -342,9 +306,92 @@ header,
   font-size: 3rem;
 }
 .ratings p {
-  color: rgba(255, 255, 255, 1);
   opacity: 0.8;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.25rem;
 }
+.banner {
+  background-image: url(Images/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.banner-content {
+  flex-direction: column;
+}
+.banner-logo {
+max-width: 350px;
+width: 100%;
+aspect-ratio: 1/1;
+  background-image: url(Images/hero-circle.png);
+  background-repeat: no-repeat;
+  justify-content: center;
+  position: relative;
+}
+
+.new-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: rgba(0, 255, 136, 1);
+  color: #000;
+  font-size: 1.125rem;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.banner-text h1 {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 800;
+  font-size: 3.75rem;
+  text-align: center;
+  padding-top: 40px;
+}
+.banner-text p {
+  opacity: 0.8;
+
+  text-align: center;
+  padding-top: 8px;
+}
+
+.banner-buttons {
+  gap: 8px;
+  padding-top: 24px;
+}
+
+.btn {
+  gap: 8px;
+  border-radius: 25px;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(
+    10deg,
+    rgba(247, 233, 63, 1) 0%,
+    rgba(251, 9, 180, 1) 51%,
+    rgba(145, 0, 248, 1) 100%
+  );
+}
+.btn-2 {
+  gap: 8px;
+  color: rgba(0, 255, 136, 1);
+  border: 2px solid rgba(0, 255, 136, 1);
+  border-radius: 25px;
+  padding: 12px 20px;
+  color: rgba(0, 255, 136, 1);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btn:hover {
+  box-shadow: 0px 4px 15px rgba(145, 0, 248, 1);
+}
+.btn-2:hover {
+  box-shadow: 0px 4px 15px rgba(0, 255, 136, 1);
+}
+ /* --- Responsive Styles --- */
